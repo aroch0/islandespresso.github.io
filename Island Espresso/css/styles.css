@@ -1,0 +1,296 @@
+/*
+Author: Avery Rochon
+Date: 10/2/24
+File Name: styles.css
+*/
+
+/* CSS reset*/
+body, header, nav, main, footer, h1, div, img, ul{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* style rules for body and images */
+body{
+	background-color:#000;
+}
+
+img{
+	max-width: 100%;
+	display: block;
+}
+
+/* Style rule for header*/
+.tab-desk {
+	display: none;
+}
+
+/* Style rules for header content */
+
+header h1 {
+	font-family:'Open Sans';
+}
+
+/* Style rules for navigation area */
+nav {
+	background-color: #000;
+	font-family: 'Open Sans';
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+}
+
+nav li {
+	display: block;
+	font-size: 2em;
+	border-top: 1px solid #000;
+}
+
+nav li a {
+	display: block;
+	color: #f5deb3;
+	text-align: center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+/* show mobile class, hide tablet-desktop class */
+.mobile {
+	display: block;
+}
+
+.tablet-desktop {
+	display: none;
+}
+
+/* Style rules for main content*/
+main {
+	background-color: #fff;
+	padding: 2%;
+	font-size: 1.15em;
+	font-family: 'open sans', serif;
+}
+
+.tel-link {
+	background-color:  #008B8B;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.tel-link a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+
+
+.hours {
+	margin-left: 10%;
+}
+	
+.action {
+	font-size: 1.25em;
+	color: #008B8B;
+	font-weight: bold;
+}
+
+.external-link {
+	color: #008B8B;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#contact {
+	text-align: center;
+	font-weight: bold;
+}
+
+#contact .contact-email-link {
+	color: #008B8B;
+	text-decoration: none;
+}
+
+.map {
+	border: 2px solid #000;
+	width: 95%;
+	height: 50%;
+}
+
+/* Style rules for footer content*/
+footer p {
+	font-size: 0.75em;
+	text-align: center;
+	color: #F5DEB3;
+	padding: 0 1em;
+}
+
+footer p a {
+	color: #F5DEB3;
+	text-decoration: none;
+}
+
+/* Media query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+	
+/* Tablet viewport: show tablet-desktop class, hide mobile class */
+.tablet-desktop {
+	display: block;
+}
+	
+.mobile {
+	display: none;
+}
+
+/* Tablet Viewport: Style rule for header */
+header {
+	position: static;
+	padding-bottom: 2%;
+}
+
+/* Tablet viewport: Style rules for nav area */
+nav li {
+	border-top: none;
+	display: inline-block;
+	border-right: 1px solid #fff;
+}
+
+nav li:last-child  {
+	border-right: none;
+}
+
+nav li a {
+	padding: 0.1em 0.75em;
+}
+	
+/* Tablet viewport: Style rules for main content area */
+main ul {
+	margin: 0 0 4% 0%;
+}
+
+#menu {
+	
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color: #F5DEB3;
+	padding: 1% 2%;
+}
+
+#menu dt {
+	font-weight: bold;
+	text-decoration-line: underline;
+}
+
+#menu dd {
+	padding: 0.5% 1% 2% 0;
+}
+
+.tel-num {
+	font-size: 1.25em;
+}
+
+.map {
+	width: 600px;
+	height: 450px;
+}
+
+}
+
+/* Media query for desktop viewport */
+@media screen and (min-width: 1015px), print {
+	
+		/* Desktop viewport: Style rule for header */
+		header {
+			width: 20%;
+			float: left;
+			padding-bottom: 0;
+		}
+	
+	/* Desktop Viewport: Style rules for nav area */
+	nav {
+		float: right;
+		width: 70%;
+		margin: 2em 1em 0 0;
+	}
+	
+	nav ul {
+		text-align: right;
+	}
+	
+	nav li {
+		border: none;
+	}
+	
+	nav li a {
+		padding: 0.5em 1em;
+	}
+	
+	nav li a:hover {
+		color: #000;
+		background-color: #fff;
+	}
+	
+	/* Desktop Viewport: Style rules for main content */
+	main {
+		clear: left;
+	}
+	
+	main h1 {
+		font-size: 2em;
+		text-decoration-line: underline;
+	}
+	
+	main ul {
+		margin: 0 0 4% 0%;
+	}
+
+	#menu {
+		
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		background-color: #F5DEB3;
+		padding: 1% 2%;
+	}
+
+	#menu dt {
+		font-weight: bold;
+	}
+
+	#menu dd {
+		padding: 0.5% 1% 2% 0;
+	}
+
+}
+	
+/* Media Query for large destop viewports */
+@media screen and (min-width: 1921px) {
+		
+	#container {
+		width: 1920px;
+		margin: 0 auto;
+	}
+		
+	}
+	
+/* media query for print */
+@media print {
+	
+	body {
+		background-color: #fff;
+		color: #000;
+	} 
+	
+}
+	
+
+
+
+	
+	
